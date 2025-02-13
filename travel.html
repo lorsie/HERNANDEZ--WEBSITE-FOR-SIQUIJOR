@@ -3,22 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TripBoss</title>
+        <title>Siquijor Travelz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- font awesome cdn -->
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- fonts -->
+
         <link rel = "stylesheet" href = "font/fonts.css">
-        <!-- normalize css -->
+
         <link rel = "stylesheet" href = "css/normalize.css">
-        <!-- custom css -->
+
         <link rel = "stylesheet" href = "css/utility.css">
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/responsive.css">
     </head>
     <body>
-        <!-- navbar  -->
+
         <nav class = "navbar">
             <div class = "container flex">
                 <a href = "index.html" class = "site-brand">
@@ -55,9 +55,7 @@
                 </div>
             </div>
         </nav>
-        <!-- end of navbar  -->
 
-        <!-- header -->
         <header class = "flex header-sm">
             <div class = "container">
                 <div class = "header-title">
@@ -107,9 +105,7 @@
                 </div>
             </div>
         </div>
-        <!-- end of gallery section -->
 
-        <!-- img modal -->
         <div id = "img-modal-box">
             <div id = "img-modal">
                 <button type = "button" id = "modal-close-btn" class = "flex">
@@ -124,9 +120,7 @@
                 <img src = "images/gallery-1.jpg">
             </div>
         </div>
-        <!-- end of img modal -->
 
-        <!-- footer -->
         <footer class = "py-4">
             <div class = "container footer-row">
                 <div class = "footer-item">
@@ -193,9 +187,7 @@
                 </div>
             </div>
         </footer>
-        <!-- end of footer -->
 
-        <!-- js -->
         <script src = "js/script.js"></script>
         <script>
             // image modal
@@ -215,7 +207,6 @@
                 })
             });
 
-            // next click
             nextBtn.addEventListener('click', () => {
                 imgIndex++;
                 if(imgIndex > allGalleryItem.length){
@@ -224,7 +215,6 @@
                 showImageContent(imgIndex);
             });
 
-            // previous click
             prevBtn.addEventListener('click', () => {
                 imgIndex--;
                 if(imgIndex <= 0){
